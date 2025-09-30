@@ -1,0 +1,111 @@
+<%-
+        begin
+        queues = File.readlines Dir.home + "/.slurm-partitions"
+        accounts = File.readlines Dir.home + "/.slurm-accounts"
+        error = ""
+        end
+-%>
+
+
+---
+cluster: "nova"
+
+attributes:
+  desktop: "xfce"
+  bc_vnc_idle: 0
+  bc_vnc_resolution:
+    required: true
+  bc_queue:
+    value: debug
+
+  slurm_account:
+    label: Account
+    help: Account under which to run the job
+  <%- if accounts.blank? -%>
+    widget: text_field
+  <%- else -%>
+    widget: select
+    options:
+    <%- accounts.each do |a| -%>
+      - [ "<%= a %>", "<%= a.delete(' ') %>" ]
+    <%- end -%>
+  <%- end -%>
+
+  custom_queue:
+    label: Queue
+    help: Select queue from the drop-down
+  <%- if queues.blank? -%>
+    widget: text_field
+  <%- else -%>
+    widget: select
+    options:
+    <%- queues.each do |q| -%>
+      - [ "<%= q %>", "<%= q %>" ]
+    <%- end -%>
+  <%- end -%> 
+
+
+  bc_num_slots: "1"
+
+  num_cores:
+    widget: "number_field"
+    label: "Number of cores"
+    value: 2
+    help: |
+      Number of cores.  Must be between 1 and 32.
+    min: 1
+    max: 32
+    step: 1
+    id: 'num_cores'
+    required: true
+
+  screen_size:
+    widget: select
+    label: "Screen Resolution"
+    help: "Application display size"
+    options:
+      - [ "1024 x 768", "1024x768" ]
+      - [ "1080p" , "1920x1080" ]
+      - [ "1440p" , "2560x1440" ]
+      - [ "2160p" , "3840x2160" ]
+
+  mem_req:
+    label: "Memory required"
+    help: "If no unit specified, Megabytes.  Can use 'k', 'M', 'G' suffixes.  NO DECIMALS.  Example: 3072M"
+    widget: text_field
+    value: "4096M"
+
+  job_name:
+    label: "Job name"
+    help: "Name of job shown in queue"
+    value: "nova Desktop"
+    widget: text_field
+
+  gres:
+    label: "GRES (only applies to GPU jobs)"
+    help: "Request GPU resources.  Format is _gpu:TYPE:COUNT_, where _TYPE_ is _a100_ or _v100_.  Example: **gpu:a100:1**"
+    widget: text_field
+    value: ""
+
+  extra_arguments:
+     label: "Optional Slurm Arguments"
+     help: "Arguments such as --exclusive or --job-name can be specified here."
+     widget: text_field
+     value: ""
+
+
+form:
+  - bc_vnc_idle
+  - desktop
+  - bc_vnc_resolution
+  - screen_size
+  - slurm_account
+  - custom_queue
+  - bc_num_hours
+  - bc_num_slots
+  - gres
+  - num_cores
+  - mem_req
+  - job_name
+  - extra_arguments
+

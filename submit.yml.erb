@@ -1,0 +1,19 @@
+---
+batch_connect:
+  template: vnc
+  extra_args: "-depth 24"
+
+script:
+  queue_name: "<%= custom_queue.delete(' ') %>"
+  accounting_id: "<%= slurm_account.delete(' ') %>"
+  native:
+    - "--ntasks=<%= num_cores.blank? ? 1 : num_cores.to_i %>"
+    - "--nodes=<%= bc_num_slots.blank? ? 1 : bc_num_slots.to_i %>"
+    - "--mem=<%= mem_req %>" 
+    - "--job-name=<%= job_name %>"
+    <%- if !gres.blank? -%>
+    - "--gres=<%= gres %>"
+    <%- end -%>
+    <%- extra_arguments.split.each do |e| -%>
+    - "<%= e %>"
+    <%- end -%>
