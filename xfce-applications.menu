@@ -135,6 +135,13 @@
                 <Category>Stata</Category>
             </Include>
         </Menu>
+        <Menu>
+            <Name>Gurobi</Name>
+            <Directory>Gurobi.directory</Directory>
+            <Include>
+                <Category>Gurobi</Category>
+            </Include>
+        </Menu>
 
     </Menu>
 

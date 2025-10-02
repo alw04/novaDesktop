@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Gurobi
+Version=1.0
+Type=Application
+Icon=/shared/ondemand/novaDesktop/icons/gurobi.png
+Exec=/shared/ondemand/novaDesktop/wrappers/gurobi/gurobi-12.0.3.sh
+StartupNotify=true
+Terminal=true
+Categories=Gurobi;
+Comment=Gurobi 12.0.3
