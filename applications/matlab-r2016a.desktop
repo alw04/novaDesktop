@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Icon=/shared/ondemand/novaDesktop/icons/matlab.png
+Exec=/shared/ondemand/novaDesktop/wrappers/matlab/matlab-r2016a.sh
+StartupNotify=true
+Categories=MATLAB;
+Name=MATLAB R2016a

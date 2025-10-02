@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Icon=/shared/ondemand/novaDesktop/icons/starccm.png
+Exec=/shared/ondemand/novaDesktop/wrappers/starccm/starccm-17.04.008.sh
+StartupNotify=true
+Categories=Starccm;
+Name=STAR-CCM 17.04.008
+Comment=Latest Version

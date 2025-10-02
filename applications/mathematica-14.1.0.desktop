@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Icon=/shared/ondemand/novaDesktop/icons/mathematica.png
+Exec=/shared/ondemand/novaDesktop/wrappers/mathematica/mathematica-14.1.0.sh
+StartupNotify=true
+Categories=Mathematica;
+Name=Mathematica 14.1.0

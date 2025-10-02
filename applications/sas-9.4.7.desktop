@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Icon=/shared/ondemand/novaDesktop/icons/SAS.png
+Exec=/shared/ondemand/novaDesktop/wrappers/sas/sas-9.4.7.sh
+StartupNotify=true
+Categories=SAS
+Name=SAS 9.4.7

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Icon=/shared/ondemand/novaDesktop/icons/ansysMechanical.png
+Exec=/shared/ondemand/novaDesktop/wrappers/ansysMechanical/ansysMechanical-2023r2.sh
+StartupNotify=true
+Categories=AnsysMechanical;
+Name=Ansys Mechanical 2023 R2
+Comment=Latest Version

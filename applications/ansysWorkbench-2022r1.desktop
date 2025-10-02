@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Icon=/shared/ondemand/novaDesktop/icons/ansysWorkbench.png
+Exec=/shared/ondemand/novaDesktop/wrappers/ansysWorkbench/ansysWorkbench-2022r1.sh
+StartupNotify=true
+Categories=AnsysWorkbench;
+Name=Ansys Workbench 2022 R1
+Comment=Latest Version

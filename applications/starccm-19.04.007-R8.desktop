@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Icon=/shared/ondemand/novaDesktop/icons/starccm.png
+Exec=/shared/ondemand/novaDesktop/wrappers/starccm/starccm-19.04.007-R8.sh
+StartupNotify=true
+Categories=Starccm;
+Name=STAR-CCM 19.04.008-R8 (Double Precision)
+Comment=Latest Version

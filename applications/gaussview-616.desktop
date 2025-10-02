@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Icon=/shared/ondemand/novaDesktop/icons/gaussview.png
+Exec=/shared/ondemand/novaDesktop/wrappers/gaussview/gaussview-616.sh
+StartupNotify=true
+Categories=GaussView;
+Name=GaussView 6.1.6

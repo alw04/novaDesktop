@@ -1,0 +1,340 @@
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
+  "http://www.freedesktop.org/standards/menu-spec/1.0/menu.dtd">
+
+<Menu>
+    <Name>Xfce</Name>
+
+    <DefaultAppDirs/>
+    <DefaultDirectoryDirs/>
+    <DefaultMergeDirs/>
+
+    <Include>
+        <Category>X-Xfce-Toplevel</Category>
+    </Include>
+
+    <Layout>
+        <Filename>xfce4-run.desktop</Filename>
+        <Separator/>
+        <Filename>exo-terminal-emulator.desktop</Filename>
+        <Filename>exo-file-manager.desktop</Filename>
+        <Filename>exo-mail-reader.desktop</Filename>
+        <Filename>exo-web-browser.desktop</Filename>
+        <Separator/>
+        <Menuname>Engineering</Menuname>
+        <Seperator/>
+        <Menuname>Mathematics</Menuname>
+        <Seperator/>
+        <Menuname>Science</Menuname>
+        <Seperator/>
+        <Menuname>Statistics</Menuname>
+        <Seperator/>
+        <Menuname>Preferences</Menuname>
+        <Menuname>Administration</Menuname>
+        <Separator/>
+        <Merge type="all"/>
+        <Separator/>
+        <Filename>xfce4-session-logout.desktop</Filename>
+    </Layout>
+
+    <Menu>
+        <Name>Engineering</Name>
+        <Directory>Engineering.directory</Directory>
+        <Include>
+            <Category>Engineering</Category>
+        </Include>
+        <Menu>
+            <Name>Abaqus</Name>
+            <Directory>Abaqus.directory</Directory>
+            <Include>
+                <Category>Abaqus</Category>
+            </Include>
+        </Menu>
+        <Menu>
+            <Name>Ansys Fluent</Name>
+            <Directory>AnsysFluent.directory</Directory>
+            <Include>
+                <Category>AnsysFluent</Category>
+            </Include>
+        </Menu>
+        <Menu>
+            <Name>Ansys Mechanical</Name>
+            <Directory>AnsysMechanical.directory</Directory>
+            <Include>
+                <Category>AnsysMechanical</Category>
+            </Include>
+        </Menu>
+        <Menu>
+            <Name>Ansys Workbench</Name>
+            <Directory>AnsysWorkbench.directory</Directory>
+            <Include>
+                <Category>AnsysWorkbench</Category>
+            </Include>
+        </Menu>
+        <Menu>
+            <Name>COMSOL</Name>
+            <Directory>Comsol.directory</Directory>
+            <Include>
+                <Category>COMSOL</Category>
+            </Include>
+        </Menu>
+        <Menu>
+            <Name>MATLAB</Name>
+            <Directory>Matlab.directory</Directory>
+            <Include>
+                <Category>MATLAB</Category>
+            </Include>
+        </Menu>
+        <Menu>
+            <Name>ParaView</Name>
+            <Directory>ParaView.directory</Directory>
+            <Include>
+                <Category>ParaView</Category>
+            </Include>
+        </Menu>
+        <Menu>
+            <Name>STAR-CCM+</Name>
+            <Directory>Starccm.directory</Directory>
+            <Include>
+                <Category>Starccm</Category>
+            </Include>
+        </Menu>
+        <Menu>
+            <Name>Tecplot</Name>
+            <Directory>Tecplot.directory</Directory>
+            <Include>
+                <Category>Tecplot</Category>
+            </Include>
+        </Menu>
+
+    </Menu>
+
+    <Menu>
+        <Name>Mathematics</Name>
+        <Directory>Mathematics.directory</Directory>
+        <Include>
+            <Category>Mathematics</Category>
+        </Include>
+        <Menu>
+            <Name>Mathematica</Name>
+            <Directory>Mathematica.directory</Directory>
+            <Include>
+                <Category>Mathematica</Category>
+            </Include>
+        </Menu>
+        <Menu>
+            <Name>Matlab</Name>
+            <Directory>Matlab.directory</Directory>
+            <Include>
+                <Category>MATLAB</Category>
+            </Include>
+        </Menu>
+        <Menu>
+            <Name>Stata</Name>
+            <Directory>Stata.directory</Directory>
+            <Include>
+                <Category>Stata</Category>
+            </Include>
+        </Menu>
+
+    </Menu>
+
+    <Menu>
+        <Name>Statistics</Name>
+        <Directory>Statistics.directory</Directory>
+        <Include>
+            <Category>Statistics</Category>
+        </Include>
+        <Menu>
+            <Name>Stata</Name>
+            <Directory>Stata.directory</Directory>
+            <Include>
+                <Category>Stata</Category>
+            </Include>
+        </Menu>
+        <Menu>
+            <Name>SAS</Name>
+            <Directory>SAS.directory</Directory>
+            <Include>
+                <Category>SAS</Category>
+            </Include>
+        </Menu>
+
+    </Menu>
+
+    <Menu>
+        <Name>Science</Name>
+        <Directory>Science.directory</Directory>
+        <Include>
+            <Category>Science</Category>
+        </Include>
+        <Menu>
+            <Name>Gaussview</Name>
+            <Directory>Gaussview.directory</Directory>
+            <Include>
+                <Category>GaussView</Category>
+            </Include>
+        </Menu>
+
+    </Menu>
+
+    <Menu>
+        <Name>Preferences</Name>
+        <Directory>xfce-settings.directory</Directory>
+        <Include>
+            <And>
+                <Category>Settings</Category>
+                <Not><Category>System</Category></Not>
+                <Not><Category>Screensaver</Category></Not>
+                <Not><Filename>fedora-im-chooser.desktop</Filename></Not>
+                <Not><Filename>gnome-default-applications.desktop</Filename></Not>
+            </And>
+        </Include>
+
+        <Layout>
+            <Filename>xfce-settings-manager.desktop</Filename>
+            <Separator/>
+            <Merge type="all"/>
+        </Layout>
+
+    </Menu>
+
+    <Menu>
+        <Name>Administration</Name>
+        <Directory>SystemConfig.directory</Directory>
+        <Include>
+            <And>
+                <Category>Settings</Category>
+                <Category>System</Category>
+                <Not><Category>Screensaver</Category></Not>
+            </And>
+            <Filename>gpk-application.desktop</Filename>
+            <Filename>gpk-update-viewer.desktop</Filename>
+        </Include>
+    </Menu>
+
+    <Menu>
+        <Name>Accessories</Name>
+        <Directory>xfce-accessories.directory</Directory>
+        <Include>
+            <And>
+                <Category>Utility</Category>
+                <Not><Category>System</Category></Not>
+            </And>
+        </Include>
+        <Exclude>
+            <Or>
+                <Filename>exo-file-manager.desktop</Filename>
+                <Filename>exo-terminal-emulator.desktop</Filename>
+                <Filename>xfce4-about.desktop</Filename>
+                <Filename>xfce4-run.desktop</Filename>
+            </Or>
+        </Exclude>
+    </Menu>
+
+    <Menu>
+        <Name>Development</Name>
+        <Directory>xfce-development.directory</Directory>
+        <Include>
+            <Category>Development</Category>
+        </Include>
+    </Menu>
+
+    <Menu>
+        <Name>Documentation</Name>
+        <Directory>Documentation.directory</Directory>
+        <Include>
+            <Category>Documentation</Category>
+        </Include>
+    </Menu>
+
+    <Menu>
+        <Name>Education</Name>
+        <Directory>xfce-education.directory</Directory>
+        <Include>
+            <Or>
+                <Category>Education</Category>
+                <Category>Science</Category>
+            </Or>
+        </Include>
+    </Menu>
+
+    <Menu>
+        <Name>Games</Name>
+        <Directory>xfce-games.directory</Directory>
+        <Include>
+            <Category>Game</Category>
+        </Include>
+    </Menu>
+
+    <Menu>
+        <Name>Graphics</Name>
+        <Directory>xfce-graphics.directory</Directory>
+        <Include>
+            <Category>Graphics</Category>
+        </Include>
+    </Menu>
+
+    <Menu>
+        <Name>Multimedia</Name>
+        <Directory>xfce-multimedia.directory</Directory>
+        <Include>
+            <Category>Audio</Category>
+            <Category>Video</Category>
+            <Category>AudioVideo</Category>
+        </Include>
+    </Menu>
+
+    <Menu>
+        <Name>Network</Name>
+        <Directory>xfce-network.directory</Directory>
+        <Include>
+            <Category>Network</Category>
+        </Include>
+        <Exclude>
+            <Or>
+                <Filename>exo-mail-reader.desktop</Filename>
+                <Filename>exo-web-browser.desktop</Filename>
+            </Or>
+        </Exclude>
+    </Menu>
+
+    <Menu>
+        <Name>Office</Name>
+        <Directory>xfce-office.directory</Directory>
+        <Include>
+            <Category>Office</Category>
+        </Include>
+    </Menu>
+
+    <Menu>
+        <Name>System</Name>
+        <Directory>xfce-system.directory</Directory>
+        <Include>
+            <And>
+                <Or>
+                    <Category>Emulator</Category>
+                    <Category>System</Category>
+                </Or>
+                <Not><Category>Settings</Category></Not>
+                <Not><Category>Screensaver</Category></Not>
+                <Not><Filename>gpk-application.desktop</Filename></Not>
+                <Not><Filename>gpk-update-viewer.desktop</Filename></Not>
+            </And>
+        </Include>
+        <Exclude>
+            <Or>
+                <Filename>xfce4-session-logout.desktop</Filename>
+            </Or>
+        </Exclude>
+    </Menu>
+
+    <Menu>
+        <Name>Other</Name>
+        <Directory>xfce-other.directory</Directory>
+        <OnlyUnallocated/>
+        <Include>
+            <All/>
+        </Include>
+    </Menu>
+
+</Menu>

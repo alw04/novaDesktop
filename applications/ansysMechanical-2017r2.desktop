@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Icon=/shared/ondemand/novaDesktop/icons/ansysMechanical.png
+Exec=/shared/ondemand/novaDesktop/wrappers/ansysMechanical/ansysMechanical-2017r2.sh
+StartupNotify=true
+Categories=AnsysMechanical;
+Name=Ansys Mechanical 2017 R2

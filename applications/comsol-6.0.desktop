@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=COMSOL 6.0
+Version=1.0
+Type=Application
+Icon=/shared/ondemand/novaDesktop/icons/COMSOL.png
+Exec=/shared/ondemand/novaDesktop/wrappers/comsol/comsol-6.0.sh
+StartupNotify=true
+Categories=COMSOL;
+Comment=COMSOL 6.0 

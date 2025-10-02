@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Icon=/shared/ondemand/novaDesktop/icons/ansysWorkbench.png
+Exec=/shared/ondemand/novaDesktop/wrappers/ansysWorkbench/ansysWorkbench-2019r4.sh
+StartupNotify=true
+Categories=AnsysWorkbench;
+Name=Ansys Workbench 2019 R4

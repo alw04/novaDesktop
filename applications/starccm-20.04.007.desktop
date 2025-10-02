@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Icon=/shared/ondemand/novaDesktop/icons/starccm.png
+Exec=/shared/ondemand/novaDesktop/wrappers/starccm/starccm-20.04.007.sh
+StartupNotify=true
+Categories=Starccm;
+Name=STAR-CCM 20.04.007
+Comment=Latest Version

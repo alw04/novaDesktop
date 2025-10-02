@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Icon=/shared/ondemand/novaDesktop/icons/ansysFluent.png
+Exec=/shared/ondemand/novaDesktop/wrappers/ansysFluent/ansysFluent-2023r2.sh
+StartupNotify=true
+Categories=AnsysFluent;
+Name=Ansys Fluent 2023 R2
+Comment=Latest Version

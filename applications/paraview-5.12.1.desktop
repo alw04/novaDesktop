@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Icon=/shared/ondemand/novaDesktop/icons/paraview.png
+Exec=/shared/ondemand/novaDesktop/wrappers/paraview/paraview-5.12.1.sh
+StartupNotify=true
+Categories=ParaView;
+Name=ParaView 5.12.1
+Comment=Latest Version
