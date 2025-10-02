@@ -1,0 +1,3 @@
+module load tecplot/2023r1/360ex
+
+tec360
